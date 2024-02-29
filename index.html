@@ -1,218 +1,237 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Anay Moitra</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="mediaqueries.css" />
-  </head>
-  <body>
-    <nav id="desktop-nav">
-      <div class="logo">Anay S. Moitra</div>
-      <div>
-        <ul class="nav-links">
-          <!-- <li><a href="#about">About</a></li> -->
-          <!-- <li><a href="#experience">Experience</a></li> -->
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </div>
-    </nav>
-    <nav id="hamburger-nav">
-      <div class="logo">Anay S. Moitra</div>
-      <div class="hamburger-menu">
-        <div class="hamburger-icon" onclick="toggleMenu()">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-        <div class="menu-links">
-          <!-- <li><a href="#about" onclick="toggleMenu()">About</a></li> -->
-          <!-- <li><a href="#experience" onclick="toggleMenu()">Experience</a></li> -->
-          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-        </div>
-      </div>
-    </nav>
-    <section id="about">
-      <!-- <p class="section__text__p1">Get To Know More</p>
-      <h1 class="title">About Me</h1> -->
-      <div class="section-container">
-        <div class="section__pic-container">
-          <img
-            src="./assets/anay.jpg"
-            alt="Profile picture"
-            class="about-pic"
-          />
-        </div>
-        <div class="about-details-container">
-          <div class="about-containers">
-            <div class="details-container">
-              <img
-                src="./assets/experience.png"
-                alt="Experience icon"
-                class="icon"
-              />
-              <h3>Experience</h3>
-              <p>2+ years <br />Flight Software</p>
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Anay Moitra</title>
+      <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
+      <link href="assets/css/font-awesome.min.css" rel="stylesheet" media="screen">
+      <link href="assets/css/simple-line-icons.css" rel="stylesheet" media="screen">
+      <link href="assets/css/animate.css" rel="stylesheet">
+      <link href="assets/css/style.css" rel="stylesheet" media="screen">
+      <script src="assets/js/modernizr.custom.js"></script>
+   </head>
+   <body>
+      <!-- Home start -->
+      <!-- <section id="home" class="pfblock-image screen-height">
+         <div class="home-overlay"></div>
+         <div class="intro">
+         	<div class="start">Hello, my name is:</div>
+         	<h1>Anay Moitra</h1>
+         	<div class="start">Welcome to my personal website!</div>
+         </div>
+         <a href="#passions">
+         	<div class="scroll-down">
+         		<span>
+         		<i class="fa fa-angle-down fa-2x"></i>
+         		</span>
+         	</div>
+         </a>
+         </section> -->
+      <!-- Home end -->
+      <!-- Portfolio start -->
+      <section id="portfolio" class="pfblock-gray">
+         <div class="container">
+         <div class="row" style="display: inline-block; margin-bottom: -50px;">
+            <div class="col-sm-12 col-sm-offset-0">
+               <div class="pfblock-header wow fadeInUp">
+                  <br><br><br>
+                  <h1 class="pfblock-title" id="mainTitle">Welcome to my homepage!</h1>
+                  <br>
+                  <div class="pfblock-subtitle">
+                     Hey! I'm Anay Moitra, an undergraduate student at University of Michigan majoring 
+                     in Aerospace Engineering and minoring in Applied Math and Computer Science. My passions 
+                     lie in creating experiences that advance human understanding and drive innovation. Whether 
+                     it be through projects, research, or the industry, I strive to make an impact through my work. 
+                     <br><br>
+                     My ambition to learn drives me to delve deeper into Flight Software and GNC Algorithms, 
+                     infused with a touch of Artificial Intelligence.
+                     <br><br>
+                     Looking to reach me for work, research, or just to chat? I dont mind! Feel free to contact me! 
+                  </div>
+               </div>
             </div>
-            <div class="details-container">
-              <img
-                src="./assets/education.png"
-                alt="Education icon"
-                class="icon"
-              />
-              <h3>Education</h3>
-              <p>B.S.E. Bachelors Degree<br />Aerospace Engineering</p>
+         </div>
+
+         <div class="row" style="display: center; margin-bottom:-20px" id="coops">
+            <div class="col-sm-12 col-sm-offset-0">
+               <div class="pfblock-header wow zoomIn">
+               </div>
             </div>
-          </div>
-          <div class="text-container">
-            <p>
-              Hey! I'm Anay Moitra, an undergraduate student at University of Michigan
-              majoring in Aerospace Engineering and minoring in Applied Math and Computer Science.
-              My passions lie in creating experiences that advance human understanding and drive
-              innovation. Whether it be through projects, research, or the industry, I 
-              strive to make an impact through my work.
-              <br>
-              <br>
-              My ambition to learn drives me to delve deeper into Flight Software and GNC Algorithms, 
-              infused with a touch of Artificial Intelligence.
-              <br>
-              <br>
-              Looking to reach me for work, research, or just to chat? I dont mind! Feel free to contact me!
-            </p>
-          </div>
-        </div>
-      </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#experience'"
-      />
-    </section>
-    <section id="projects">
-      <p class="section__text__p1">Browse My Recent</p>
-      <h1 class="title">Projects</h1>
-      <div class="experience-details-container">
-        <div class="about-containers">
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/mfly.png"
-                alt="Project 1"
-                class="project-img"
-              />
+         </div>
+         <hr>
+         <div class="row">
+            <div class="col-lg-6">
+               <div class="iconbox wow slideInLeft">
+                  <div class="iconbox-icon">
+                     <i class="fa fa-code" aria-hidden="true"></i>
+                     <i class="fa fa-trophy" aria-hidden="true"></i>
+                     <i class="fa fa-book" aria-hidden="true"></i>
+                     <i class="fa fa-terminal" aria-hidden="true"></i>
+                  </div>
+                  <div class="iconbox-text">
+                     <h3 class="iconbox-title">Skills</h3>
+                     <div class="iconbox-desc">
+                        <div class="accordion" id="accordion3">
+                           <div class="accordion-group">
+                              <div class="accordion-heading">
+                                 <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion3" href="#collapseThree">
+                                 </a>
+                              </div>
+                              <div id="collapseThree" class="accordion-body collapse">
+                                 Programming Languages: C++, C, Python, Matlab, Javascript <br>
+                                 Aerospace: Flight Control Systems, Orbital Dynamics, Solid Structures, <br>
+                                 Computational Fluid Dynamics, Propulsion Theory <br>
+                                 Robotics: SLAM, LiDAR, Occupancy Grids, Motor Control, Cascaded PID Control, <br>
+                                 Full State-Feedback Control, Computer Vision <br>
+                                 <br>
+                              </div>
+                              <button class="SeeMore3" data-toggle="collapse" href="#collapseThree">See More</button>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
             </div>
-            <h2 class="experience-sub-title project-title">M-Fly: MAT-5</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Live Demo
-              </button>
+            <div class="col-lg-6">
+               <div class="iconbox wow slideInRight">
+                  <div class="iconbox-icon">
+                     <i class="fa fa-building" aria-hidden="true"></i>
+                     <i class="fa fa-briefcase" aria-hidden="true"></i>
+                     <i class="fa fa-graduation-cap" aria-hidden="true"></i>
+                     <i class="fa fa-university" aria-hidden="true"></i>
+                  </div>
+                  <div class="iconbox-text">
+                     <h3 class="iconbox-title">Experience</h3>
+                     <div class="iconbox-desc">
+                        <div class="accordion" id="accordion4">
+                           <div class="accordion-group">
+                              <div class="accordion-heading">
+                                 <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion4" href="#collapseThree">
+                                 </a>
+                              </div>
+                              <div id="collapseFour" class="accordion-body collapse">
+                                 Space-FALCON Lab - Undergraduate Research Assistant - Winter 2024 <br>
+                                 Belcan - Engineering Intern - Winter 2024 <br>
+                                 Best Metal Products - Manufacturing Engineering Intern - Summer 2023 <br>
+                                 Gravitons - Web Development Intern - Winter 2023 <br>
+                                 Barnes & Noble College - Book Seller - Summer 2022 <br>
+                                 <br>
+                              </div>
+                              <button class="SeeMore4" data-toggle="collapse" href="#collapseFour">See More</button>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
             </div>
-          </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/drone.png"
-                alt="Project 2"
-                class="project-img"
-              />
+         </div>
+         <br><br>
+         <div class="row">
+            <div class="col-xs-12 col-sm-6 col-md-6">
+               <a href="https://mfly.engin.umich.edu/" target="_blank" style="text-decoration:none;color:white;" target="_blank" style="text-decoration:none;">
+                  <div class="grid wow zoomIn">
+                     <figure class="effect-bubba">
+                        <img src="assets/images/mfy1_1100x620.webp" alt="Anay Moitra"/>
+                        <figcaption>
+                           <h2>
+               <a href = "https://mfly.engin.umich.edu/" target="_blank" style="text-decoration:none;color:white;"> M-Fly: <span>MAT-5</span> </a></h2>
+               <p>Flight Systems for an autonomous plane.</p>
+               </figcaption>
+               </figure>
+               </div>
+               </a> 
             </div>
-            <h2 class="experience-sub-title project-title">MDT: Phantom</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Live Demo
-              </button>
+            <div class="col-xs-12 col-sm-6 col-md-6">
+               <a href="https://michigandronetechnology.weebly.com/" target="_blank" style="text-decoration:none;">
+                  <div class="grid wow zoomIn">
+                     <figure class="effect-bubba">
+                        <img src="assets/images/mdt_1100x620.webp" alt="Anay Moitra"/>
+                        <figcaption>
+                           <h2>
+               <a href = "https://michigandronetechnology.weebly.com/" target="_blank" style="text-decoration:none;color:white;">MDT: <span>Phantom</span></a></h2>
+               <p>Navigate and control an AI-powered drone.</p>
+               </figcaption>
+               </figure>
+               </div>
             </div>
-          </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/hovercraft.png"
-                alt="Project 3"
-                class="project-img"
-              />
+         </div>
+         <div class="row">
+            <div class="col-xs-12 col-sm-4 col-md-4">
+               <a target="_blank" style="text-decoration:none;">
+                  <div class="grid wow zoomIn">
+                     <figure class="effect-bubba">
+                        <img src="assets/images/hovercraft-removebg-preview_500x313.webp" alt="Anay Moitra"/> 
+                        <figcaption>
+                           <h2>
+               <a target="_blank" style="text-decoration:none;color:white;">Operative <span>Hovercraft</span></a></h2>
+               <p>Construct a remote-controlled dynamic hovercraft.</p>
+               </figcaption>
+               </figure>
+               </div>
             </div>
-            <h2 class="experience-sub-title project-title">Hovercraft</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Live Demo
-              </button>
+            <div class="col-xs-12 col-sm-4 col-md-4">
+               <a href="https://github.com/amoitra1/Fault-Tolerant-Control-of-a-Quadrotor" target="_blank" style="text-decoration:none;">
+                  <div class="grid wow zoomIn">
+                     <figure class="effect-bubba">
+                        <img src="assets/images/fault_500x313.jpg" alt="Anay Moitra"/> 
+                        <figcaption>
+                           <h2>
+               <a href="https://github.com/amoitra1/Fault-Tolerant-Control-of-a-Quadrotor" target="_blank" style="text-decoration:none;color:white;">Fault-Tolerant Control of a <span>Quadrotor</span></a></h2>
+               <p><a href = "https://github.com/amoitra1/Fault-Tolerant-Control-of-a-Quadrotor" target="_blank" style="text-decoration:none;color:white;">Simulink Model to create a fault-tolerant controller.</a></p>
+               </figcaption>			
+               </figure>
+               </div>
             </div>
-          </div>
-        </div>
-      </div>
-      <!-- <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#contact'"
-      /> -->
-    </section>
-    <section id="contact">
-      <!-- <p class="section__text__p1">Get in Touch</p> -->
-      <h1 class="title">Contact Me</h1>
-      <div class="contact-info-upper-container">
-        <div class="contact-info-container">
-          <img
-            src="./assets/email.png"
-            alt="Email icon"
-            class="icon contact-icon email-icon"
-          />
-          <p><a href="mailto:examplemail@gmail.com">amoitra@umich.edu</a></p>
-        </div>
-        <div class="contact-info-container">
-          <img
-            src="./assets/linkedin.png"
-            alt="LinkedIn icon"
-            class="icon contact-icon"
-          />
-          <p><a href="https://www.linkedin.com/in/anaymoitra/">LinkedIn</a></p>
-        </div>
-      </div>
-    </section>
-    <footer>
-      <nav>
-        <div class="nav-links-container">
-          <ul class="nav-links">
-            <!-- <li><a href="#about">About</a></li> -->
-            <!-- <li><a href="#experience">Experience</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li> -->
-          </ul>
-        </div>
-      </nav>
-    </footer>
-    <script src="script.js"></script>
-  </body>
+            <div class="col-xs-12 col-sm-4 col-md-4">
+               <a href="https://devpost.com/software/wordle-bot-av9s34" target="_blank" style="text-decoration:none;">
+                  <div class="grid wow zoomIn">
+                     <figure class="effect-bubba">
+                        <img src="assets/images/wordle_500x313.jpg" alt="Anay Moitra"/>
+                        <figcaption>
+                           <h2>
+               <a href="https://devpost.com/software/wordle-bot-av9s34" target="_blank" style="text-decoration:none;color:white;">Wordle <span>Bot</span></a></h2>
+               <p><a href = "https://devpost.com/software/wordle-bot-av9s34" target="_blank" style="text-decoration:none;color:white;">Develop an algorithm designed to solve Wordle in the shortest time.</a></p>
+               </figcaption>			
+               </figure>
+               </div>
+            </div>
+         </div>
+         <!-- .row -->
+         <br><br>
+         <!-- .container -->
+      </section>
+      <!-- Portfolio end -->
+      <!-- Contact end -->
+      <!-- Footer start -->
+      <footer id="footer">
+         <div class="container">
+            <div class="row">
+               <div class="col-sm-12">
+                  <ul class="social-links">
+                     <li><a href="https://github.com/amoitra1" class="wow fadeInUp" data-wow-delay=".4s"><i class="fa fa-github"></i></a></li>
+                     <li><a href="https://www.linkedin.com/in/anaymoitra/" class="wow fadeInUp" data-wow-delay=".5s"><i class="fa fa-linkedin"></i></a></li>
+                  </ul>
+                  <p class="copyright">
+                     © 2024 Anay Moitra</a>
+                  </p>
+               </div>
+            </div>
+            <!-- .row -->
+         </div>
+         <!-- .container -->
+      </footer>
+      <!-- Footer end -->
+      <script src="assets/js/jquery-1.11.1.min.js"></script>
+      <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+      <script src="assets/js/jquery.parallax-1.1.3.js"></script>
+      <script src="assets/js/imagesloaded.pkgd.js"></script>
+      <script src="assets/js/jquery.sticky.js"></script>
+      <script src="assets/js/smoothscroll.js"></script>
+      <script src="assets/js/wow.min.js"></script>
+      <script src="assets/js/waypoints.min.js"></script>
+      <script src="assets/js/jquery.cbpQTRotator.js"></script>
+      <script src="assets/js/custom.js"></script>
+      <script src="assets/js/seemore.js"> </script>
+   </body>
 </html>
