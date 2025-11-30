@@ -48,29 +48,44 @@ body {
     text-transform: uppercase;
 }
 
-.post-list {
-    list-style: none;
-    padding-left: 0;
+.intro-text {
+    margin-bottom: 2rem;
 }
 
-.post-list > li {
-    margin-bottom: 1.5rem;
+.intro-text p {
+    margin-bottom: 1rem;
 }
 
-.post-meta {
+.books-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 2rem;
+}
+
+.books-table th,
+.books-table td {
+    padding: 0.5rem;
+    text-align: left;
+    border-bottom: 1px solid #ccc;
+    vertical-align: top;
+}
+
+.books-table th {
+    font-weight: bold;
+    text-transform: uppercase;
     font-size: 0.9rem;
+}
+
+.books-table td {
+    font-size: 0.9rem;
+}
+
+.book-title {
+    font-weight: bold;
+}
+
+.book-author {
     color: #666;
-    margin-bottom: 0.25rem;
-}
-
-.post-link {
-    color: #3950a2;
-    text-decoration: underline;
-    font-size: 1rem;
-}
-
-.post-link:hover {
-    text-decoration: underline;
 }
 
 .site-footer {
@@ -100,42 +115,3 @@ body {
     text-decoration: underline;
 }
 
-.post-header {
-    margin-bottom: 2rem;
-}
-
-.post-title {
-    font-weight: bold;
-    font-size: 1.2rem;
-    margin-bottom: 0.5rem;
-    text-transform: uppercase;
-}
-
-.post-content {
-    margin-bottom: 2rem;
-}
-
-.post-content h2 {
-    font-weight: bold;
-    font-size: 1rem;
-    margin-top: 2rem;
-    margin-bottom: 1rem;
-    text-transform: uppercase;
-}
-
-.post-content h3 {
-    font-weight: bold;
-    font-size: 0.95rem;
-    margin-top: 1.5rem;
-    margin-bottom: 0.75rem;
-}
-
-.post-content p {
-    margin-bottom: 1rem;
-}
-
-.post-content img {
-    max-width: 100%;
-    margin: 1rem 0;
-    border: 1px solid #ccc;
-}
